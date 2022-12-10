@@ -5,14 +5,9 @@
 
 int main(char* args) {
 	int N = 10;
-	Matrix m = Matrix(N, true);
+	Matrix m = Matrix(N, 1,2,3,4,5,6,7,8,9,20);
 	Matrix m1 = m;
-	for (int i = 0; i < N; i++) {
-		for (int j = 0; j < N; j++) {
-			std::cout << m1.matrix[i][j] << "\t";
-		}
-		std::cout << std::endl << std::endl;
-	}
+	m1.print();
 	std::cout << std::endl << std::endl << std::endl;
 	return 666;
 }
